@@ -1,5 +1,4 @@
 import streamlit as st
-from summary import *
 
 def hello(name="World"):
   '''
