@@ -13,8 +13,8 @@ def hello(name="World"):
 def st_ui():
   '''Function to render the Streamlit UI'''
 
-  st.markdown("# Main page 🎈")
-  st.sidebar.markdown("# Main page 🎈")
+  st.markdown("# App")
+  st.sidebar.markdown("# App")
 
   name = st.text_input('Type your name', value = "Daisi user")
   greeting = hello(name)
