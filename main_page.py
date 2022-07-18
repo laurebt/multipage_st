@@ -20,8 +20,5 @@ def st_ui():
   greeting = hello(name)
   st.header(greeting)
 
-  with st.expander("Summary"):
-        st.markdown(get_summary(name))
-
 if __name__ == "__main__":
   st_ui()
