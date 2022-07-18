@@ -1,7 +1,7 @@
 import streamlit as st
 
-st.markdown("# Summary")
-st.sidebar.markdown("# Summary")
+st.markdown("# API call")
+st.sidebar.markdown("# API call")
 
 def get_summary(name = "Daisi user"):
     text = '''
@@ -19,6 +19,6 @@ def get_summary(name = "Daisi user"):
 
     return text
 
-with st.expander("Summary"):
-    name = st.text_input('Type your name', value = "Daisi user")
-    st.markdown(get_summary(name))
+name = st.text_input('Type your name', value = "Daisi user")
+st.markdown(get_summary(name))
+
